@@ -8,13 +8,13 @@
 
 **/
 
-#import "moduleClass.h"
+#include "moduleClass.h"
 
 moduleClass myModule;
 // moduleClass myModule(with parameter);
 
 
-#import "libClass.h"
+#include "libClass.h"
 
 libClass myLib(10000);
 
@@ -50,7 +50,7 @@ void setup() {
             // Wait for Serial Connection to be Opend from Host or 6second timeout
             unsigned long ulTimeStamp_Start = millis();
             while( (! Serial) && ( (millis() - ulTimeStamp_Start) < 6000 ) ) {
-                1;
+                ; // wait
             }
         #endif
 

@@ -57,7 +57,7 @@ uint32_t moduleClass::get_counter() {
 //==========================================
 // private functions
 
-libClass::cbfunc_t moduleClass::internalCbfunc() {
+void  moduleClass::internalCbfunc(uint32_t counter) {
     Serial.print(F("internalCbfunc - counter:"));
     Serial.println(counter);
 }

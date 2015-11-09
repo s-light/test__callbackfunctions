@@ -50,7 +50,9 @@ private:
 
     libClass internalLib;
 
-    libClass::cbfunc_t internalCbfunc();
+    // libClass::cbfunc_t internalCbfunc();
+    // void internalCbfunc(uint32_t counter);
+    static void internalCbfunc(uint32_t counter);
 };
 
 
